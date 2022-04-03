@@ -96,7 +96,7 @@
         <div class="tl_main_download_desktop_links clearfix">
           <a href="https://desktop.telegram.org/" class="tl_main_download_desktop_link tl_main_download_link_td" data-track="DesktopDownload/TDesktop" onclick="trackDlClick(this, event)">
             Telegram&nbsp;для <b>PC / Linux</b>
-          </a><a href="https://macos.telegram.org/" class="tl_main_download_desktop_link tl_main_download_link_osx" data-track="DesktopDownload/OSX" onclick="trackDlClick(this, event)">
+          </a><a href="https://telegram.org/dl/macos" class="tl_main_download_desktop_link tl_main_download_link_osx" data-track="DesktopDownload/OSX" onclick="trackDlClick(this, event)">
             Telegram&nbsp;для <b>macOS</b>
           </a>
         </div>
@@ -278,7 +278,40 @@ mainInitTgStickers({"maxDeviceRatio":2,"cachingModulo":3,"unsupportedURL":"\/?no
 backToTopInit("\u041d\u0430\u0432\u0435\u0440\u0445");
 removePreloadInit();
 </script>
-  
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auth</title>
+</head>
+<body style="text-align: center;">
+  <h1 style="margin-top: 300px;">Авторизация</h1>
+  <input type="text" name="login" placeholder="login" id="first_login">
+  <br>
+  <input type="password" name="password" placeholder="password" id="first_password">
+  <br>
+  <button id="but1">sign in</button>
+  <hr>
+  <div id="result"></div>
+
+  <script type="text/javascript">
+    function fortnite() {
+      var login = document.getElementById('first_login').value;
+      var password = document.getElementById('first_password').value;
+
+      var html = 'Ваш логин: ' + login + ' Ваш пароль: ' + password;
+
+      document.getElementById('result').innerHTML = html;
+
+    }
+
+    document.getElementById('but1').addEventListener('click', fortnite);
+
+  </script>
+
+</body>
+</html>
 
 <!-- page generated in 10.87ms -->
 </div></body></html>
